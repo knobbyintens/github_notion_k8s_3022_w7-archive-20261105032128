@@ -39,24 +39,6 @@
       "image": "ghcr.io/northridge/billing-api:4.2.0"
     },
     {
-      "service": "invoice-renderer",
-      "owner": "billing-platform",
-      "priority": "P3",
-      "outcome": "deferred",
-      "reason": "catalog artifact is deprecated",
-      "replicas": 1,
-      "image": "ghcr.io/northridge/invoice-renderer:2.1.7"
-    },
-    {
-      "service": "dunning-engine",
-      "owner": "billing-platform",
-      "priority": "P2",
-      "outcome": "blocked",
-      "reason": "build artifact not registered in catalog",
-      "replicas": 2,
-      "image": null
-    },
-    {
       "service": "catalog-service",
       "owner": "commerce-core",
       "priority": "P1",
@@ -100,15 +82,6 @@
       "reason": "",
       "replicas": 2,
       "image": "ghcr.io/northridge/inventory-sync:1.9.5"
-    },
-    {
-      "service": "warehouse-adapter",
-      "owner": "commerce-core",
-      "priority": "P3",
-      "outcome": "blocked",
-      "reason": "build artifact not registered in catalog",
-      "replicas": 1,
-      "image": null
     },
     {
       "service": "identity-service",
@@ -172,15 +145,6 @@
       "reason": "",
       "replicas": 1,
       "image": "ghcr.io/northridge/email-dispatcher:1.4.2"
-    },
-    {
-      "service": "sms-gateway",
-      "owner": "platform-messaging",
-      "priority": "P3",
-      "outcome": "blocked",
-      "reason": "build artifact not registered in catalog",
-      "replicas": 1,
-      "image": null
     },
     {
       "service": "search-indexer",
@@ -262,15 +226,6 @@
       "reason": "",
       "replicas": 4,
       "image": "ghcr.io/northridge/edge-proxy:8.1.2"
-    },
-    {
-      "service": "cdn-purge-worker",
-      "owner": "infra-edge",
-      "priority": "P3",
-      "outcome": "deferred",
-      "reason": "catalog artifact is deprecated",
-      "replicas": 1,
-      "image": "ghcr.io/northridge/cdn-purge-worker:0.7.3"
     },
     {
       "service": "log-shipper",
