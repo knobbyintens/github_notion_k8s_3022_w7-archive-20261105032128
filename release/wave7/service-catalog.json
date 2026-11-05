@@ -1,0 +1,237 @@
+{
+  "environment": "production",
+  "registry": "ghcr.io/northridge",
+  "artifacts": [
+    {
+      "service": "ledger-core",
+      "image": "ghcr.io/northridge/ledger-core:3.4.1",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "settlement-gateway",
+      "image": "ghcr.io/northridge/settlement-gateway:2.9.0",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "reconciliation-worker",
+      "image": "ghcr.io/northridge/reconciliation-worker:1.12.3",
+      "port": 9090,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "billing-api",
+      "image": "ghcr.io/northridge/billing-api:4.2.0",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "invoice-renderer",
+      "image": "ghcr.io/northridge/invoice-renderer:2.1.7",
+      "port": 8080,
+      "deprecated": true,
+      "deprecation_note": "invoice-renderer is superseded and must not be rolled out in Wave 7"
+    },
+    {
+      "service": "catalog-service",
+      "image": "ghcr.io/northridge/catalog-service:5.0.2",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "pricing-engine",
+      "image": "ghcr.io/northridge/pricing-engine:3.8.4",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "cart-api",
+      "image": "ghcr.io/northridge/cart-api:2.6.1",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "checkout-orchestrator",
+      "image": "ghcr.io/northridge/checkout-orchestrator:6.1.0",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "inventory-sync",
+      "image": "ghcr.io/northridge/inventory-sync:1.9.5",
+      "port": 9090,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "identity-service",
+      "image": "ghcr.io/northridge/identity-service:7.2.1",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "auth-gateway",
+      "image": "ghcr.io/northridge/auth-gateway:4.0.9",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "tenant-manager",
+      "image": "ghcr.io/northridge/tenant-manager:2.3.0",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "policy-engine",
+      "image": "ghcr.io/northridge/policy-engine:1.7.2",
+      "port": 9000,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "audit-log-service",
+      "image": "ghcr.io/northridge/audit-log-service:0.9.8",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "notification-hub",
+      "image": "ghcr.io/northridge/notification-hub:3.1.5",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "email-dispatcher",
+      "image": "ghcr.io/northridge/email-dispatcher:1.4.2",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "search-indexer",
+      "image": "ghcr.io/northridge/search-indexer:4.6.0",
+      "port": 9200,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "analytics-collector",
+      "image": "ghcr.io/northridge/analytics-collector:2.8.1",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "report-builder",
+      "image": "ghcr.io/northridge/report-builder:1.1.0",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "data-warehouse-loader",
+      "image": "ghcr.io/northridge/data-warehouse-loader:5.5.3",
+      "port": 9090,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "feature-flag-service",
+      "image": "ghcr.io/northridge/feature-flag-service:3.0.4",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "config-service",
+      "image": "ghcr.io/northridge/config-service:2.2.8",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "secrets-broker",
+      "image": "ghcr.io/northridge/secrets-broker:1.5.0",
+      "port": 8200,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "rate-limiter",
+      "image": "ghcr.io/northridge/rate-limiter:2.4.6",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "edge-proxy",
+      "image": "ghcr.io/northridge/edge-proxy:8.1.2",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "cdn-purge-worker",
+      "image": "ghcr.io/northridge/cdn-purge-worker:0.7.3",
+      "port": 8080,
+      "deprecated": true,
+      "deprecation_note": "cdn-purge-worker is superseded and must not be rolled out in Wave 7"
+    },
+    {
+      "service": "log-shipper",
+      "image": "ghcr.io/northridge/log-shipper:0.7.3",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "metrics-aggregator",
+      "image": "ghcr.io/northridge/metrics-aggregator:3.2.7",
+      "port": 9090,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "backup-scheduler",
+      "image": "ghcr.io/northridge/backup-scheduler:1.8.4",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "dr-failover-controller",
+      "image": "ghcr.io/northridge/dr-failover-controller:2.5.1",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "legacy-batch-runner",
+      "image": "ghcr.io/northridge/legacy-batch-runner:1.3.9",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    },
+    {
+      "service": "pdf-export-service",
+      "image": "ghcr.io/northridge/pdf-export-service:2.0.6",
+      "port": 8080,
+      "deprecated": false,
+      "deprecation_note": null
+    }
+  ]
+}

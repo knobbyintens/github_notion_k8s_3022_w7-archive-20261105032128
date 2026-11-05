@@ -1,2 +1,3 @@
-# github_notion_k8s_3022_w7
-NorthRidge platform release control repo (Wave 7 rollout)
+# NorthRidge Platform Release Control
+
+This repository holds release plans and build-artifact catalogs for the NorthRidge production environment.

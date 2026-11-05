@@ -1,0 +1,245 @@
+{
+  "wave": 7,
+  "environment": "production",
+  "change_ticket": "NR-CHG-2026-W7-ROLLOUT",
+  "planned_services": [
+    {
+      "service": "ledger-core",
+      "owner": "payments-platform",
+      "priority": "P1",
+      "replicas": 4,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "settlement-gateway",
+      "owner": "payments-platform",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "reconciliation-worker",
+      "owner": "payments-platform",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-10 to 2026-11-14"
+    },
+    {
+      "service": "billing-api",
+      "owner": "billing-platform",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-11 to 2026-11-13"
+    },
+    {
+      "service": "invoice-renderer",
+      "owner": "billing-platform",
+      "priority": "P3",
+      "replicas": 1,
+      "window": "2026-11-11 to 2026-11-14"
+    },
+    {
+      "service": "dunning-engine",
+      "owner": "billing-platform",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-12 to 2026-11-17"
+    },
+    {
+      "service": "catalog-service",
+      "owner": "commerce-core",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "pricing-engine",
+      "owner": "commerce-core",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "cart-api",
+      "owner": "commerce-core",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-11 to 2026-11-14"
+    },
+    {
+      "service": "checkout-orchestrator",
+      "owner": "commerce-core",
+      "priority": "P1",
+      "replicas": 4,
+      "window": "2026-11-10 to 2026-11-13"
+    },
+    {
+      "service": "inventory-sync",
+      "owner": "commerce-core",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-11 to 2026-11-15"
+    },
+    {
+      "service": "warehouse-adapter",
+      "owner": "commerce-core",
+      "priority": "P3",
+      "replicas": 1,
+      "window": "2026-11-13 to 2026-11-18"
+    },
+    {
+      "service": "identity-service",
+      "owner": "platform-identity",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "auth-gateway",
+      "owner": "platform-identity",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "tenant-manager",
+      "owner": "platform-identity",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-11 to 2026-11-14"
+    },
+    {
+      "service": "policy-engine",
+      "owner": "platform-identity",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-11 to 2026-11-15"
+    },
+    {
+      "service": "audit-log-service",
+      "owner": "platform-identity",
+      "priority": "P3",
+      "replicas": 1,
+      "window": "2026-11-12 to 2026-11-16"
+    },
+    {
+      "service": "notification-hub",
+      "owner": "platform-messaging",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-11 to 2026-11-14"
+    },
+    {
+      "service": "email-dispatcher",
+      "owner": "platform-messaging",
+      "priority": "P3",
+      "replicas": 1,
+      "window": "2026-11-12 to 2026-11-16"
+    },
+    {
+      "service": "sms-gateway",
+      "owner": "platform-messaging",
+      "priority": "P3",
+      "replicas": 1,
+      "window": "2026-11-12 to 2026-11-17"
+    },
+    {
+      "service": "search-indexer",
+      "owner": "data-platform",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-10 to 2026-11-14"
+    },
+    {
+      "service": "analytics-collector",
+      "owner": "data-platform",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-10 to 2026-11-13"
+    },
+    {
+      "service": "report-builder",
+      "owner": "data-platform",
+      "priority": "P3",
+      "replicas": 1,
+      "window": "2026-11-13 to 2026-11-18"
+    },
+    {
+      "service": "data-warehouse-loader",
+      "owner": "data-platform",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "feature-flag-service",
+      "owner": "platform-core",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-10 to 2026-11-13"
+    },
+    {
+      "service": "config-service",
+      "owner": "platform-core",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-10 to 2026-11-13"
+    },
+    {
+      "service": "secrets-broker",
+      "owner": "platform-core",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "rate-limiter",
+      "owner": "platform-core",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-12"
+    },
+    {
+      "service": "edge-proxy",
+      "owner": "infra-edge",
+      "priority": "P1",
+      "replicas": 4,
+      "window": "2026-11-10 to 2026-11-11"
+    },
+    {
+      "service": "cdn-purge-worker",
+      "owner": "infra-edge",
+      "priority": "P3",
+      "replicas": 1,
+      "window": "2026-11-12 to 2026-11-16"
+    },
+    {
+      "service": "log-shipper",
+      "owner": "infra-observability",
+      "priority": "P3",
+      "replicas": 1,
+      "window": "2026-11-13 to 2026-11-18"
+    },
+    {
+      "service": "metrics-aggregator",
+      "owner": "infra-observability",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-11 to 2026-11-15"
+    },
+    {
+      "service": "backup-scheduler",
+      "owner": "infra-observability",
+      "priority": "P2",
+      "replicas": 2,
+      "window": "2026-11-12 to 2026-11-16"
+    },
+    {
+      "service": "dr-failover-controller",
+      "owner": "infra-observability",
+      "priority": "P1",
+      "replicas": 3,
+      "window": "2026-11-10 to 2026-11-13"
+    }
+  ]
+}
