@@ -1,0 +1,312 @@
+{
+  "wave": 7,
+  "environment": "production",
+  "entries": [
+    {
+      "service": "ledger-core",
+      "owner": "payments-platform",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 4,
+      "image": "ghcr.io/northridge/ledger-core:3.4.1"
+    },
+    {
+      "service": "settlement-gateway",
+      "owner": "payments-platform",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/settlement-gateway:2.9.0"
+    },
+    {
+      "service": "reconciliation-worker",
+      "owner": "payments-platform",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/reconciliation-worker:1.12.3"
+    },
+    {
+      "service": "billing-api",
+      "owner": "billing-platform",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/billing-api:4.2.0"
+    },
+    {
+      "service": "invoice-renderer",
+      "owner": "billing-platform",
+      "priority": "P3",
+      "outcome": "deferred",
+      "reason": "catalog artifact is deprecated",
+      "replicas": 1,
+      "image": "ghcr.io/northridge/invoice-renderer:2.1.7"
+    },
+    {
+      "service": "dunning-engine",
+      "owner": "billing-platform",
+      "priority": "P2",
+      "outcome": "blocked",
+      "reason": "build artifact not registered in catalog",
+      "replicas": 2,
+      "image": null
+    },
+    {
+      "service": "catalog-service",
+      "owner": "commerce-core",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/catalog-service:5.0.2"
+    },
+    {
+      "service": "pricing-engine",
+      "owner": "commerce-core",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/pricing-engine:3.8.4"
+    },
+    {
+      "service": "cart-api",
+      "owner": "commerce-core",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/cart-api:2.6.1"
+    },
+    {
+      "service": "checkout-orchestrator",
+      "owner": "commerce-core",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 4,
+      "image": "ghcr.io/northridge/checkout-orchestrator:6.1.0"
+    },
+    {
+      "service": "inventory-sync",
+      "owner": "commerce-core",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/inventory-sync:1.9.5"
+    },
+    {
+      "service": "warehouse-adapter",
+      "owner": "commerce-core",
+      "priority": "P3",
+      "outcome": "blocked",
+      "reason": "build artifact not registered in catalog",
+      "replicas": 1,
+      "image": null
+    },
+    {
+      "service": "identity-service",
+      "owner": "platform-identity",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/identity-service:7.2.1"
+    },
+    {
+      "service": "auth-gateway",
+      "owner": "platform-identity",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/auth-gateway:4.0.9"
+    },
+    {
+      "service": "tenant-manager",
+      "owner": "platform-identity",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/tenant-manager:2.3.0"
+    },
+    {
+      "service": "policy-engine",
+      "owner": "platform-identity",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/policy-engine:1.7.2"
+    },
+    {
+      "service": "audit-log-service",
+      "owner": "platform-identity",
+      "priority": "P3",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 1,
+      "image": "ghcr.io/northridge/audit-log-service:0.9.8"
+    },
+    {
+      "service": "notification-hub",
+      "owner": "platform-messaging",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/notification-hub:3.1.5"
+    },
+    {
+      "service": "email-dispatcher",
+      "owner": "platform-messaging",
+      "priority": "P3",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 1,
+      "image": "ghcr.io/northridge/email-dispatcher:1.4.2"
+    },
+    {
+      "service": "sms-gateway",
+      "owner": "platform-messaging",
+      "priority": "P3",
+      "outcome": "blocked",
+      "reason": "build artifact not registered in catalog",
+      "replicas": 1,
+      "image": null
+    },
+    {
+      "service": "search-indexer",
+      "owner": "data-platform",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/search-indexer:4.6.0"
+    },
+    {
+      "service": "analytics-collector",
+      "owner": "data-platform",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/analytics-collector:2.8.1"
+    },
+    {
+      "service": "report-builder",
+      "owner": "data-platform",
+      "priority": "P3",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 1,
+      "image": "ghcr.io/northridge/report-builder:1.1.0"
+    },
+    {
+      "service": "data-warehouse-loader",
+      "owner": "data-platform",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/data-warehouse-loader:5.5.3"
+    },
+    {
+      "service": "feature-flag-service",
+      "owner": "platform-core",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/feature-flag-service:3.0.4"
+    },
+    {
+      "service": "config-service",
+      "owner": "platform-core",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/config-service:2.2.8"
+    },
+    {
+      "service": "secrets-broker",
+      "owner": "platform-core",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/secrets-broker:1.5.0"
+    },
+    {
+      "service": "rate-limiter",
+      "owner": "platform-core",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/rate-limiter:2.4.6"
+    },
+    {
+      "service": "edge-proxy",
+      "owner": "infra-edge",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 4,
+      "image": "ghcr.io/northridge/edge-proxy:8.1.2"
+    },
+    {
+      "service": "cdn-purge-worker",
+      "owner": "infra-edge",
+      "priority": "P3",
+      "outcome": "deferred",
+      "reason": "catalog artifact is deprecated",
+      "replicas": 1,
+      "image": "ghcr.io/northridge/cdn-purge-worker:0.7.3"
+    },
+    {
+      "service": "log-shipper",
+      "owner": "infra-observability",
+      "priority": "P3",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 1,
+      "image": "ghcr.io/northridge/log-shipper:0.7.3"
+    },
+    {
+      "service": "metrics-aggregator",
+      "owner": "infra-observability",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/metrics-aggregator:3.2.7"
+    },
+    {
+      "service": "backup-scheduler",
+      "owner": "infra-observability",
+      "priority": "P2",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 2,
+      "image": "ghcr.io/northridge/backup-scheduler:1.8.4"
+    },
+    {
+      "service": "dr-failover-controller",
+      "owner": "infra-observability",
+      "priority": "P1",
+      "outcome": "deployed",
+      "reason": "",
+      "replicas": 3,
+      "image": "ghcr.io/northridge/dr-failover-controller:2.5.1"
+    }
+  ]
+}
